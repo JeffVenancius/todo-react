@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+body {
+    margin: 16px;
+    padding: 0;
+    background-color: olivedrab;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#inputer {
+    margin-left: 50px;
+    display: flex;
+    justify-content: flex-start;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+textarea {
+    background-color: rgb(153, 190, 77);
+    border: 2px solid rgb(227, 255, 101);
+    border-radius: 8px;
+    color: rgb(34, 34, 34);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+textarea:focus {
+    outline: 1px solid olive;
 }
 
-.App-link {
-  color: #61dafb;
+#inputer button {
+    margin-top: auto;
+    margin-left: 16px;
+    width: 64px;
+    height: 22px;
+    background-color: olive;
+    border: 1px solid rgb(227, 255, 101);
+    border-radius: 8px;
+    color: rgb(49, 54, 25);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+#inputer button:active {
+    width: 60px;
+    height: 20px;
+    margin-left: 18px;
+}
+
+.sortBy {
+    text-align: center;
+    width: 96px;
+    margin-right: auto;
+    margin-bottom: 32px;
+}
+
+.sortBy select {
+    height: 50%;
+}
+
+#lists {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.todo__item {
+    display: flex;
+    justify-content: space-between;
+    background-color: olive;
+    border: 2px solid rgb(227, 255, 101);
+    border-radius: 8px;
+    margin-right: 64px;
+    margin-bottom: 16px;
+}
+.listOf {
+    padding: 0;
+    margin: 8px;
+}
+
+.todo__item button {
+    margin: auto;
+    margin-left: 64px;
+    margin-right: 16px;
+    width: 12px;
+    height: 12px;
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    border-radius: 11px;
+}
+
+.todo__item button:hover {
+    border: none;
+    background-color: rgb(205, 0, 0);
+}
+
+.todo__item  {
+    width: 80%;
+}
+
+.todo__item  div h3 {
+    text-align: center;
+    margin: 0;
+    color: rgb(34, 34, 34)
+}
+.todo__item div p {
+   text-align: center; 
+   margin: 0;
+   color: rgb(51, 51, 51);
 }
